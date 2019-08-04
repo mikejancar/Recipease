@@ -1,5 +1,6 @@
 {
-  "name": "client",
+  "name": "recipease",
+  "author": "Mike Jancar",
   "version": "0.1.0",
   "private": true,
   "scripts": {
