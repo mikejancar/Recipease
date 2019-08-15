@@ -1,19 +1,29 @@
 <template>
-  <div id="app">
-    <AppHeader></AppHeader>
-    <router-view />
-  </div>
+  <v-app id="app">
+    <NavBar />
+    <v-container>
+      <v-layout>
+        <v-flex>
+          <v-layout>
+            <v-flex xs12>
+              <router-view />
+            </v-flex>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
 // @ is an alias to /src
-import AppHeader from '@/components/AppHeader.vue';
+import NavBar from '@/components/NavBar.vue';
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    AppHeader
-  }
+    NavBar
+  },
 };
 </script>
 
